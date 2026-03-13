@@ -16,22 +16,17 @@ CyrusUI.Notify({
 
 --/ CREATE TAB
 local Tab = Window.CreateTab({
-    Name = "Main"
+    Name = "Tab"
 })
 
 --/ CREATE SECTION
 Tab.CreateSection({
-    Name = "Player"
-})
-
---/ CREATE A LABEL
-Tab.CreateLabel({
-    Text = "Player Controls"
+    Name = "Section"
 })
 
 --/ CREATE A BUTTON
 Tab.CreateButton({
-    Name = "Print Hello",
+    Name = "Button",
     Callback = function()
         print("hello")
     end
@@ -39,7 +34,7 @@ Tab.CreateButton({
 
 --/ CREATE A TOGGLE
 Tab.CreateToggle({
-    Name = "God Mode",
+    Name = "Toggle",
     Default = false,
     Callback = function(state)
         print("God Mode:", state)
@@ -48,7 +43,7 @@ Tab.CreateToggle({
 
 --/ CREATE A SLIDER
 Tab.CreateSlider({
-    Name = "WalkSpeed",
+    Name = "Slider",
     Min = 0,
     Max = 200,
     Default = 16,
@@ -63,9 +58,9 @@ Tab.CreateSlider({
 
 --/ CREATE A DROPDOWN
 Tab.CreateDropdown({
-    Name = "Team",
-    Options = {"Red", "Blue", "Green"},
-    Default = "Red",
+    Name = "Dropdown",
+    Options = {"A", "B", "C"},
+    Default = "A",
     Callback = function(option)
         print("Selected Team:", option)
     end
@@ -73,10 +68,15 @@ Tab.CreateDropdown({
 
 --/ CREATE A TEXTBOX
 Tab.CreateTextBox({
-    Name = "Username",
+    Name = "TextBox",
     Placeholder = "Enter name",
     Default = "",
     Callback = function(text, enterPressed)
         print("Text entered:", text)
     end
+})
+
+--/ CREATE A LABEL
+Tab.CreateLabel({
+    Text = "This is a Label"
 })
