@@ -5,7 +5,8 @@ local Window = CyrusUI.CreateWindow({
     Title = "Example Hub"
 })
 
-CyrusUI.SetTheme(Purple)
+--/ SET THEME
+CyrusUI.SetTheme("Purple")
 
 --/ CREATE A NOTIFICATION
 CyrusUI.Notify({
