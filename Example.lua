@@ -10,29 +10,29 @@ local Window = CyrusUI.CreateWindow({
 --/ SET THEME
 CyrusUI.SetTheme("Purple")
 
-Themes           |
------------------|
-┌─────────────┬─────────────┬─────────────┬─────────────┬─────────────┐
-│ Cyan        │ Purple      │ Green       │ Orange      │ Red         │
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ White       │ Blue        │ Pink        │ Lime        │ Gold        │
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ NeonBlue    │ NeonGreen   │ NeonPink    │ NeonPurple  │ NeonOrange  │
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ Midnight    │ Obsidian    │ Shadow      │ Void        │ Stealth     │
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ PastelBlue  │ PastelPink  │ PastelGreen │ PastelPurple│ PastelOrange│
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ Ocean       │ Forest      │ Sunset      │ Rose        │ Ice         │
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ Cyber       │ Matrix      │ Terminal    │ Circuit     │ TechPurple  │
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ Rainbow     │ Galaxy      │ Fire        │ Electric    │ Plasma      │
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ Crimson     │ Emerald     │ Sapphire    │ Amethyst    │ Amber       │
-├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-│ NeonRainbow │ Aurora      │ Firestorm   │ Frostbite   │ SolarFlare  │
-└─────────────┴─────────────┴─────────────┴─────────────┴─────────────┘
+-- /Themes           |
+    -----------------|
+-- ┌─────────────┬─────────────┬─────────────┬─────────────┬─────────────┐
+-- │ Cyan        │ Purple      │ Green       │ Orange      │ Red         │
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ White       │ Blue        │ Pink        │ Lime        │ Gold        │
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ NeonBlue    │ NeonGreen   │ NeonPink    │ NeonPurple  │ NeonOrange  │
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ Midnight    │ Obsidian    │ Shadow      │ Void        │ Stealth     │
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ PastelBlue  │ PastelPink  │ PastelGreen │ PastelPurple│ PastelOrange│
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ Ocean       │ Forest      │ Sunset      │ Rose        │ Ice         │
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ Cyber       │ Matrix      │ Terminal    │ Circuit     │ TechPurple  │
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ Rainbow     │ Galaxy      │ Fire        │ Electric    │ Plasma      │
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ Crimson     │ Emerald     │ Sapphire    │ Amethyst    │ Amber       │
+-- ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+-- │ NeonRainbow │ Aurora      │ Firestorm   │ Frostbite   │ SolarFlare  │
+-- └─────────────┴─────────────┴─────────────┴─────────────┴─────────────┘
 
 --/ CREATE A NOTIFICATION
 CyrusUI.Notify({
