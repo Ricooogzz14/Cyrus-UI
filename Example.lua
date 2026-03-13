@@ -2,7 +2,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/
 
 --/ CREATE WINDOW
 local Window = CyrusUI.CreateWindow({
-    Title = "Example Hub"
+    Title = "Example Hub",
+    Size = UDim2.new(0, 700, 0, 500),
+    ToggleKey = Enum.KeyCode.RightControl
 })
 
 --/ SET THEME
