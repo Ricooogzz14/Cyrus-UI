@@ -1,4 +1,4 @@
-![ALT TEXT](https://discord.com/channels/@me/1457503496352960700/1482079203389079582)
+![ALT TEXT]()
 
 Cyrus UI is a new kind of Roblox interface framework designed for developers who want their games to look cutting-edge and full of futuristic, cyberpunk flair. It’s built in Lua, so it slides right into your workflow. Think glowing neon buttons, smooth animations, and all the interactive pieces you need—toggles, sliders, dropdowns, textboxes, notifications—working together as a sleek, unified control panel that makes any game feel instantly upgraded.
 
