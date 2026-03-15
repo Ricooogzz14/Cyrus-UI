@@ -1,14 +1,14 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/refs/heads/main/UI.lua'))()
 
---/ CREATE WINDOW
-local Window = CyrusUI.CreateWindow({
-    Title = "Example Hub",
-    Size = UDim2.new(0, 700, 0, 500),
-    ToggleKey = Enum.KeyCode.RightControl
-})
-
 --/ SET THEME
 CyrusUI.SetTheme("Purple")
+
+--/ CREATE WINDOW
+CyrusUI.KeyToUse = "key"
+local Window = CyrusUI.CreateWindow({
+    Title = "My UI",
+    UseKey = false  -- This will show key system first
+})
 
 -- /Themes           |
     -----------------|
