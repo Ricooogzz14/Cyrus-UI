@@ -63,9 +63,9 @@ Tab.CreateTextBox({
 	end
 })
 
-	Tab.CreateLabel({
-		Text = "This is a Label"
-	})
+Tab.CreateLabel({
+	Text = "This is a Label"
+})
 end
 
 if UseKeySystem then
