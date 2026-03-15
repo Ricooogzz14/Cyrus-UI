@@ -1,14 +1,45 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/refs/heads/main/UI.lua'))()
+local UseKeySystem = true --/ set to false to skip key verification
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/refs/heads/main/UI.lua"))()
 
---/ SET THEME
-CyrusUI.SetTheme("Purple")
+--/ CREATE WINDOW + KEY SYSTEM
+local Window
 
---/ CREATE WINDOW
-CyrusUI.KeyToUse = "key"
-local Window = CyrusUI.CreateWindow({
-    Title = "My UI",
-    UseKey = false  -- This will show key system first
-})
+local function CreateUI()
+	CyrusUI.KeyToUse = "key"
+	CyrusUI.SetTheme("Purple")
+
+	Window = CyrusUI.CreateWindow({
+		Title = "Cyrus UI",
+	})
+
+	local Tab = Window.CreateTab({
+		Name = "Main"
+	})
+
+	Tab.CreateSection({
+		Name = "Section"
+	})
+end
+
+if UseKeySystem then
+	local KeySystem = CyrusUI.CreateKeySystem({
+		Key = "secret123",
+		OnSuccess = function()
+			CreateUI()
+		end,
+		OnFail = function()
+			print("Access denied!")
+		end,
+		AllowAttempts = 3,
+		SaveKey = false,
+		Title = "Authentication",
+		Prompt = "Enter your key:",
+		ButtonText = "Unlock"
+	})
+	KeySystem:Show()
+else
+	CreateUI()
+end
 
 -- /Themes           |
     -----------------|
@@ -34,13 +65,12 @@ local Window = CyrusUI.CreateWindow({
 -- │ NeonRainbow │ Aurora      │ Firestorm   │ Frostbite   │ SolarFlare  │
 -- └─────────────┴─────────────┴─────────────┴─────────────┴─────────────┘
 
---/ CREATE A NOTIFICATION
 CyrusUI.Notify({
-    Title = "Hello",
-    Content = "This is a notification",
-    Duration = 5,
-    Type = "Info",
-    ButtonText = "OK"
+	Title = "Hello",
+	Content = "This is a notification",
+	Duration = 5,
+	Type = "Info",
+	ButtonText = "Ok!"
 })
 
 --/ CREATE TAB
