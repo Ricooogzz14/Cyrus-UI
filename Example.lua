@@ -70,7 +70,7 @@ end
 
 if UseKeySystem then
 	local KeySystem = CyrusUI.CreateKeySystem({
-		Key = "secret123",
+		Key = "key",
 		OnSuccess = function()
 			CreateUI()
 		end,
