@@ -7,64 +7,61 @@ local function CreateUI()
 	CyrusUI.KeyToUse = "key"
 	CyrusUI.SetTheme("Purple")
 
-	Window = CyrusUI.CreateWindow({
-		Title = "Cyrus UI",
-	})
+Window = CyrusUI.CreateWindow({
+	Title = "Cyrus UI",
+})
 
-	local Tab = Window.CreateTab({
-		Name = "Main"
-	})
+local Tab = Window.CreateTab({
+	Name = "Main"
+})
 
-	Tab.CreateSection({
-		Name = "Section"
-	})
+Tab.CreateSection({
+	Name = "Section"
+})
 
-	Tab.CreateButton({
-		Name = "Button",
-		Callback = function()
-			print("hello")
-		end
-	})
+Tab.CreateButton({
+	Name = "Button",
+	Callback = function()
+		-- Code
+	end
+})
 
-	Tab.CreateToggle({
-		Name = "Toggle",
-		Default = false,
-		Callback = function(state)
-			print("God Mode:", state)
-		end
-	})
+Tab.CreateToggle({
+	Name = "Toggle",
+	Default = false,
+	Callback = function(state)
+		-- Code
+	end
+})
 
-	Tab.CreateSlider({
-		Name = "Slider",
-		Min = 0,
-		Max = 200,
-		Default = 16,
-		Rounding = 0,
-		Callback = function(v)
-			local player = game.Players.LocalPlayer
-			if player.Character and player.Character:FindFirstChild("Humanoid") then
-				player.Character.Humanoid.WalkSpeed = v
-			end
-		end
-	})
+Tab.CreateSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 200,
+	Default = 16,
+	Rounding = 0,
+	Callback = function(v)
+		-- Code
+	end
+})
 
-	Tab.CreateDropdown({
-		Name = "Dropdown",
-		Options = {"A","B","C"},
-		Default = "A",
-		Callback = function(option)
-			print("Selected:", option)
-		end
-	})
+Tab.CreateDropdown({
+	Name = "Dropdown",
+	Options = {"A","B","C"},
+	Default = "A",
+	Callback = function(option)
+		-- Code
+	end
+})
 
-	Tab.CreateTextBox({
-		Name = "TextBox",
-		Placeholder = "Enter name",
-		Default = "",
-		Callback = function(text)
-			print("Text:", text)
-		end
-	})
+Tab.CreateTextBox({
+	Name = "TextBox",
+	Placeholder = "Enter name",
+	Default = "",
+	Callback = function(text)
+		-- Code
+	end
+})
 
 	Tab.CreateLabel({
 		Text = "This is a Label"
