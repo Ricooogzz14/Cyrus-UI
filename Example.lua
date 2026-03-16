@@ -4,7 +4,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/
 local Window
 
 local function CreateUI()
-	CyrusUI.KeyToUse = "key"
 	CyrusUI.SetTheme("Purple")
 
 Window = CyrusUI.CreateWindow({
