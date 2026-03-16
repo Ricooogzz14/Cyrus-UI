@@ -14,7 +14,7 @@ Window = CyrusUI.CreateWindow({
 
 --/ CREATE A TAB
 local Tab = Window.CreateTab({
-	Name = "Main"
+	Name = "Tab"
 })
 
 --/ CREATE A SECTION
