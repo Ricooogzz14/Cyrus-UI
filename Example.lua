@@ -1,23 +1,28 @@
-local UseKeySystem = true
+local UseKeySystem = false --/ SET TRUE TO ENABLE KEY SYSTEM
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/refs/heads/main/UI.lua"))()
 
 local Window
 
+--/ SET A THEME
 local function CreateUI()
 	CyrusUI.SetTheme("Purple")
 
+--/ CREATE WINDOW
 Window = CyrusUI.CreateWindow({
 	Title = "Cyrus UI",
 })
 
+--/ CREATE A TAB
 local Tab = Window.CreateTab({
 	Name = "Main"
 })
 
+--/ CREATE A SECTION
 Tab.CreateSection({
 	Name = "Section"
 })
 
+--/ CREATE A BUTTON
 Tab.CreateButton({
 	Name = "Button",
 	Callback = function()
@@ -25,6 +30,7 @@ Tab.CreateButton({
 	end
 })
 
+--/ CREATE A TOGGLE
 Tab.CreateToggle({
 	Name = "Toggle",
 	Default = false,
@@ -33,6 +39,7 @@ Tab.CreateToggle({
 	end
 })
 
+--/ CREATE A SLIDER
 Tab.CreateSlider({
 	Name = "Slider",
 	Min = 0,
@@ -44,6 +51,7 @@ Tab.CreateSlider({
 	end
 })
 
+--/ CREATE A DROPDOWN
 Tab.CreateDropdown({
 	Name = "Dropdown",
 	Options = {"A","B","C"},
@@ -53,6 +61,7 @@ Tab.CreateDropdown({
 	end
 })
 
+--/ CREATE A TEXTBOX
 Tab.CreateTextBox({
 	Name = "TextBox",
 	Placeholder = "Enter name",
@@ -62,11 +71,13 @@ Tab.CreateTextBox({
 	end
 })
 
+--/ USE A LABEL
 Tab.CreateLabel({
 	Text = "This is a Label"
 })
 end
 
+--/ USE KEY SYSTEM
 if UseKeySystem then
 	local KeySystem = CyrusUI.CreateKeySystem({
 		Key = "key",
@@ -74,13 +85,13 @@ if UseKeySystem then
 			CreateUI()
 		end,
 		OnFail = function()
-			print("Access denied!")
+			game.Players.LocalPlayer:Kick("Key authentication failed.")
 		end,
 		AllowAttempts = 3,
-		SaveKey = false,
+		SaveKey = true,
 		Title = "Authentication",
 		Prompt = "Enter your key:",
-		ButtonText = "Unlock"
+		ButtonText = "Submit"
 	})
 	KeySystem:Show()
 else
