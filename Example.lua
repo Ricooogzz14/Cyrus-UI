@@ -1,4 +1,4 @@
-local UseKeySystem = false --/ SET TRUE TO ENABLE KEY SYSTEM
+local UseKeySystem = false --/ SET TRUE TO ENABLE KEY SYSTEM / SCROLL DOWN TO EDIT
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/refs/heads/main/UI.lua"))()
 
 local Window
