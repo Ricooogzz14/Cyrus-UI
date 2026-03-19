@@ -1,5 +1,5 @@
 local UseKeySystem = false --/ SET TRUE TO ENABLE KEY SYSTEM / SCROLL DOWN TO EDIT
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/refs/heads/main/UI.lua"))()
+local CyrusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ricooogzz14/Cyrus-UI/refs/heads/main/UI.lua"))()
 
 local Window
 
@@ -37,7 +37,6 @@ Tab.CreateSection({
 Tab.CreateButton({
 	Name = "Button",
 	Callback = function()
-		-- Code
 	end
 })
 
@@ -46,7 +45,6 @@ Tab.CreateToggle({
 	Name = "Toggle",
 	Default = false,
 	Callback = function(state)
-		-- Code
 	end
 })
 
@@ -58,7 +56,6 @@ Tab.CreateSlider({
 	Default = 16,
 	Rounding = 0,
 	Callback = function(v)
-		-- Code
 	end
 })
 
@@ -68,25 +65,23 @@ Tab.CreateDropdown({
 	Options = {"A","B","C"},
 	Default = "A",
 	Callback = function(option)
-		-- Code
 	end
 })
 
 --/ CREATE A TEXTBOX
-	Tab.CreateTextBox({
-		Name = "TextBox",
-		Placeholder = "Enter name",
-		Default = "",
-		Callback = function(text)
-		-- Code
-		end
-	})
-end
+Tab.CreateTextBox({
+	Name = "TextBox",
+	Placeholder = "Enter name",
+	Default = "",
+	Callback = function(text)
+	end
+})
 
 --/ USE A LABEL
 Tab.CreateLabel({
 	Text = "This is a Label"
 })
+
 end
 
 --/ USE KEY SYSTEM
