@@ -62,14 +62,15 @@ Tab.CreateDropdown({
 })
 
 --/ CREATE A TEXTBOX
-Tab.CreateTextBox({
-	Name = "TextBox",
-	Placeholder = "Enter name",
-	Default = "",
-	Callback = function(text)
+	Tab.CreateTextBox({
+		Name = "TextBox",
+		Placeholder = "Enter name",
+		Default = "",
+		Callback = function(text)
 		-- Code
-	end
-})
+		end
+	})
+end
 
 --/ USE A LABEL
 Tab.CreateLabel({
