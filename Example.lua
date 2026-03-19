@@ -12,6 +12,17 @@ Window = CyrusUI.CreateWindow({
 	Title = "Cyrus UI",
 })
 
+CyrusUI.Notify({
+    Title = "Hello",
+    Content = "This is a Notification",
+    Duration = 5,
+    Type = "Info",
+    ButtonText = "OK",
+    Callback = function()
+        print("Notification closed!")
+    end
+})
+
 --/ CREATE A TAB
 local Tab = Window.CreateTab({
 	Name = "Tab"
